@@ -1,7 +1,7 @@
 const utils = require('./webpack-configs/utils')
 
 const dev = {
-  port: 8080,
+  port: 8090,
   autoOpenBrowser: true,
   assetsSubDirectory: 'static',
   assetsPublicPath: '/',

@@ -1,0 +1,76 @@
+.vue-treeselect {
+  
+    &.vue-treeselect--focused {
+      .vue-treeselect__control {
+        border-color: #4c78fc;
+      }
+    }
+    
+    .vue-treeselect__control {
+      height: 32px;
+       border-color: #dee0e3;
+       &:hover {
+         .vue-treeselect__x-container {
+           visibility: visible;
+         }
+       }
+      .vue-treeselect__input,
+      .vue-treeselect__placeholder,
+      .vue-treeselect__single-value {
+        line-height: 30px;
+      }
+      .vue-treeselect__input-container {
+        display: flex;
+        align-items: center;
+      }
+        .vue-treeselect__x-container {
+          visibility: hidden;
+        }
+      .vue-treeselect__x-container:hover {
+        color: #4c78fc;
+      }
+    }
+    .vue-treeselect__menu {
+      border: unset;
+      background: #ffffff;
+      box-shadow: 0px 2px 8px rgba(61, 69, 100, 0.16);
+      border-radius: 4px;
+    }
+  }
+  
+  .vue-treeselect--focused:not(.vue-treeselect--open) .vue-treeselect__control {
+    border-color: #4c78fc;
+  }
+  
+  .vue-treeselect--open-below:not(.vue-treeselect--append-to-body)
+    .vue-treeselect__menu-container {
+    top: calc(100% + 6px);
+  }
+  
+  .vue-treeselect--open-below .vue-treeselect__menu {
+    border-radius: 4px;
+  }
+  
+  .vue-treeselect--open.vue-treeselect--open-below .vue-treeselect__control {
+    border-radius: 4px;
+  }
+  
+  .vue-treeselect__label {
+    line-height: 32px;
+    color: #1f2329;
+  }
+  
+  .vue-treeselect--single .vue-treeselect__option--selected {
+    font-weight: unset;
+    background: #e9efff !important;
+    &:hover {
+      background: #f5f5f5;
+    }
+    .biz-icon {
+      color: #4c78fc;
+    }
+  
+    .label-text {
+      color: #4c78fc;
+    }
+  }

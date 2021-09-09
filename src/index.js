@@ -1,6 +1,7 @@
 import Treeselect from './components/Treeselect'
 import treeselectMixin from './mixins/treeselectMixin'
 import './style.less'
+import './reset-style.less'
 
 export default Treeselect
 export { Treeselect, treeselectMixin }
